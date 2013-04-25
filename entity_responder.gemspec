@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jason@lessonplanet.com"]
   spec.description   = %q{A Rails responder that returns an entity in the response body rather than the :no_content header.}
   spec.summary       = %q{A Rails responder that returns an entity in the response body rather than the :no_content header.}
-  spec.homepage      = ""
+  spec.homepage      = 'https://github.com/LessonPlanet/entity_responder'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
