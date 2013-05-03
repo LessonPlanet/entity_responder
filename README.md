@@ -1,7 +1,6 @@
 # Responders::EntityResponder
 
-[![Build
-Status](https://travis-ci.org/LessonPlanet/entity_responder.png)](https://travis-ci.org/LessonPlanet/entity_responder)
+[![Build Status](https://travis-ci.org/LessonPlanet/entity_responder.png)](https://travis-ci.org/LessonPlanet/entity_responder)
 
 The default [Rails
 Responder](http://api.rubyonrails.org/classes/ActionController/Responder.html)
