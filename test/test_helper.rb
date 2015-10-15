@@ -1,16 +1,16 @@
+require 'bundler/setup'
 require 'minitest/autorun'
-require 'bundler'
-
-Bundler.setup
 
 # Configure Rails
 ENV["RAILS_ENV"] = "test"
 
-require 'minitest/ansi'
-MiniTest::ANSI.use!
+require 'minitest/reporters'
+Minitest::Reporters.use!
 
+require 'active_model'
 require 'action_controller'
 require 'action_controller/test_case'
+require 'responders'
 require 'entity_responder'
 
 Routes = ActionDispatch::Routing::RouteSet.new
@@ -20,6 +20,7 @@ end
 
 class ActiveSupport::TestCase
   setup do @routes = Routes end
+  self.test_order = :random
 end
 
 class AppResponder < ActionController::Responder
